@@ -1,0 +1,115 @@
+
+#custom-bootstrap-menu
+{
+    padding-left: 110px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 16px;
+    /*background-color: rgba(12, 93, 165, 1);*/
+    background-color: rgba(0, 0, 0, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(221, 255, 0, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(4, 58, 107, 1);
+    background-color: rgba(103, 159, 210, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #679fd2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #679fd2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #679fd2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #0c5da5;
+}
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+/********************************************/
+/*----------------CAROUSEL------------------*/
+/********************************************/
+
+/**/
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.article p .radio
+{
+    font-weight: normal;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.contents
+{
+    margin-left: 110px;
+    margin-right: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contents img
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.marketing {
+    margin-top: 40px;
+}
+
+.footer-contents
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 105px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer-text
+{
+    size: 14px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 10px;
+}
+
+.contents{
+    margin-top: 50px;
+}

@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>.NET Core</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+        <nav>
+        <div class = "navbar-wrapper">
+            <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header"><a class="navbar-brand" href="#"><b>.NET Core</b></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-menubuilder">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <div class = "contents article">
+        <h1>Тест</h1>
+        
+        <h4>
+            Якою є назва типу int в CLR?
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">System.Int16</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">System.Int32</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Microsoft.Int16</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">System.Numerics.BigInteger</label>
+            </div>
+        </div>
+
+        <h4>
+            Якою буде значення змінної sum після виконання коду?
+        </h4>
+        <pre class="csharp" style="font-family:monospace;">List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span> a <span style="color: #008000;">=</span> <span style="color: #008000;">new</span> List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span> <span style="color: #FF0000;">1</span>, <span style="color: #FF0000;">2</span>, <span style="color: #FF0000;">3</span> <span style="color: #008000;">&#125;</span><span style="color: #008000;">;</span>
+<span style="color: #0600FF; font-weight: bold;">var</span> b <span style="color: #008000;">=</span> a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight: bold;">Select</span><span style="color: #008000;">&#40;</span>x <span style="color: #008000;">=&gt;</span> x <span style="color: #008000;">-</span> <span style="color: #FF0000;">1</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span>
+a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight: bold;">Add</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">6</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span>
+&nbsp;
+<span style="color: #6666cc; font-weight: bold;">int</span> sum <span style="color: #008000;">=</span> b<span style="color: #008000;">.</span><span style="color: #0000FF;">Sum</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span></pre>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">6</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">3</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">12</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">8</label>
+            </div>
+        </div>
+
+        <h4>
+            Для того, щоб із об’єктів класу A можна було викликати цикл foreach, 
+            потрібно, щоб клас A:
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Наслідував інтерфейс IEnumerable/IEnumerable&lt;T>
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Реалізував метод інтерфейсу IEnumerable/IEnumerable&lt;T> GetEnumerator()
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Наслідував інтерфейс IEnumerable/IEnumerable&lt;T> і реалізував його метод
+                    GetEnumerator()
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Наслідував інтерфейс IDisposable або IComparable/IComparable&lt;A>
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Для того, щоб до перечислення A (enum A) додати публічний метод, потрібно:
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Додати метод розширення
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Наслідувати перечислення A
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Додати поле типу Action або Func
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Додати функцію із доступом public аналогічно класам або структурам.
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Методи розширення є статичними методами, визначені у класах, помічених словом
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    abstract
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    internal
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    static
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    partial
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Що виведе даний код?
+        </h4>
+        <pre class="csharp" style="font-family:monospace;"><span style="color: #008000;">checked</span>
+<span style="color: #008000;">&#123;</span>
+    <span style="color: #6666cc; font-weight: bold;">int</span> a <span style="color: #008000;">=</span> Int32<span style="color: #008000;">.</span><span style="color: #0000FF;">MaxValue</span> <span style="color: #008000;">+</span> <span style="color: #FF0000;">1</span><span style="color: #008000;">;</span>
+    Console<span style="color: #008000;">.</span><span style="color: #0000FF;">WriteLine</span><span style="color: #008000;">&#40;</span>a<span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span>
+<span style="color: #008000;">&#125;</span></pre>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    -2147483648
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    OverflowException
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    IndexOutOfRangeException
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    2147483647
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Дія ключових слів checked/unchecked не розповсюджується на об’єкти типу
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    byte
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    int
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    long
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    decimal
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Якщо між вашою назвою класу, змінної тощо і ключовим словом виникає конфлікт,
+            перед вашою назвою потрібно поставити символ
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    &
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    ^
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    @
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    ~
+                </label>
+            </div>
+        </div>
+
+        <h4>
+            Чим може бути тип у небезпечному контексті?
+        </h4>
+        <div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Значимим типом або типом посилань
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Значимим типом, типом посилань або System.Object
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Вказівником або типом, що наслідується від System.ValueType
+                </label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">
+                    Вказівником, значимим типом або типом посилань
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <footer>
+        <div class = "footer-contents">
+            <p class = "footer-text">&copy; Андрій Токарський, 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
