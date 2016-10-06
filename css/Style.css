@@ -113,3 +113,7 @@
 .contents{
     margin-top: 50px;
 }
+
+#testResult {
+    font-size: 14pt;
+}

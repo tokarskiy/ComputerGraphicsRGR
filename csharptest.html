@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>.NET Core</title>
+    <title>Тест C#</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,14 +29,6 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="collapse navbar-collapse navbar-menubuilder">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -44,46 +36,46 @@
     </header>
 
     <div class = "contents article">
-        <h1>Тест</h1>
+        <h1>Тест на знання C#</h1>
         
         <h4>
             Якою є назва типу int в CLR?
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">System.Int16</label>
+                <label><input type="radio" name="optradio1" id="a11">System.Int16</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">System.Int32</label>
+                <label><input type="radio" name="optradio1" id="a12">System.Int32</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">Microsoft.Int16</label>
+                <label><input type="radio" name="optradio1" id="a13">Microsoft.Int16</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">System.Numerics.BigInteger</label>
+                <label><input type="radio" name="optradio1" id="a14">System.Numerics.BigInteger</label>
             </div>
         </div>
 
         <h4>
             Якою буде значення змінної sum після виконання коду?
         </h4>
-        <pre class="csharp" style="font-family:monospace;">List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span> a <span style="color: #008000;">=</span> <span style="color: #008000;">new</span> List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span> <span style="color: #FF0000;">1</span>, <span style="color: #FF0000;">2</span>, <span style="color: #FF0000;">3</span> <span style="color: #008000;">&#125;</span><span style="color: #008000;">;</span>
+<pre class="csharp" style="font-family:monospace;">List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span> a <span style="color: #008000;">=</span> <span style="color: #008000;">new</span> List<span style="color: #008000;">&lt;</span><span style="color: #6666cc; font-weight: bold;">int</span><span style="color: #008000;">&gt;</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span> <span style="color: #FF0000;">1</span>, <span style="color: #FF0000;">2</span>, <span style="color: #FF0000;">3</span> <span style="color: #008000;">&#125;</span><span style="color: #008000;">;</span>
 <span style="color: #0600FF; font-weight: bold;">var</span> b <span style="color: #008000;">=</span> a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight: bold;">Select</span><span style="color: #008000;">&#40;</span>x <span style="color: #008000;">=&gt;</span> x <span style="color: #008000;">-</span> <span style="color: #FF0000;">1</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span>
 a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight: bold;">Add</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">6</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span>
 &nbsp;
 <span style="color: #6666cc; font-weight: bold;">int</span> sum <span style="color: #008000;">=</span> b<span style="color: #008000;">.</span><span style="color: #0000FF;">Sum</span><span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span></pre>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">6</label>
+                <label><input type="radio" name="optradio2" id="a21">6</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">3</label>
+                <label><input type="radio" name="optradio2" id="a22">3</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">12</label>
+                <label><input type="radio" name="optradio2" id="a23">12</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">8</label>
+                <label><input type="radio" name="optradio2" id="a24">8</label>
             </div>
         </div>
 
@@ -93,23 +85,23 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio3" id="a31">
                     Наслідував інтерфейс IEnumerable/IEnumerable&lt;T>
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
-                    Реалізував метод інтерфейсу IEnumerable/IEnumerable&lt;T> GetEnumerator()
+                <label><input type="radio" name="optradio3" id="a32">
+                    Реалізував метод GetEnumerator(), що повертає IEnumerator&lt;T>
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio3" id="a33">
                     Наслідував інтерфейс IEnumerable/IEnumerable&lt;T> і реалізував його метод
                     GetEnumerator()
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio3" id="a34">
                     Наслідував інтерфейс IDisposable або IComparable/IComparable&lt;A>
                 </label>
             </div>
@@ -120,22 +112,22 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio4" id="a41">
                     Додати метод розширення
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio4" id="a42">
                     Наслідувати перечислення A
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio4" id="a43">
                     Додати поле типу Action або Func
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio4" id="a44">
                     Додати функцію із доступом public аналогічно класам або структурам.
                 </label>
             </div>
@@ -146,22 +138,22 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio5" id="a51">
                     abstract
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio5" id="a52">
                     internal
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio5" id="a53">
                     static
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio5" id="a54">
                     partial
                 </label>
             </div>
@@ -177,22 +169,22 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
 <span style="color: #008000;">&#125;</span></pre>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio6" id="a61">
                     -2147483648
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio6" id="a62">
                     OverflowException
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio6" id="a63">
                     IndexOutOfRangeException
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio6" id="a64">
                     2147483647
                 </label>
             </div>
@@ -203,22 +195,22 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio7" id="a71">
                     byte
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio7" id="a72">
                     int
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio7" id="a73">
                     long
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio7" id="a74">
                     decimal
                 </label>
             </div>
@@ -230,23 +222,23 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio8" id="a81">
                     &
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
-                    ^
+                <label><input type="radio" name="optradio8" id="a82">
+                    ?
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio8" id="a83">
                     @
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
-                    ~
+                <label><input type="radio" name="optradio8" id="a84">
+                    $
                 </label>
             </div>
         </div>
@@ -256,30 +248,30 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
         </h4>
         <div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio9" id="a91">
                     Значимим типом або типом посилань
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio9" id="a92">
                     Значимим типом, типом посилань або System.Object
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio9" id="a93">
                     Вказівником або типом, що наслідується від System.ValueType
                 </label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">
+                <label><input type="radio" name="optradio9" id="a94">
                     Вказівником, значимим типом або типом посилань
                 </label>
             </div>
         </div>
+        <button class="btn btn-success" onclick="buttonClick();">Check.</button><br/><br/>
+        <p id="testResult">Результат: </p>
     </div>
     
-    
-
     <footer>
         <div class = "footer-contents">
             <p class = "footer-text">&copy; Андрій Токарський, 2016</p>
@@ -290,5 +282,6 @@ a<span style="color: #008000;">.</span><span style="color: #0600FF; font-weight:
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/coolTest.js"></script>
   </body>
 </html>
